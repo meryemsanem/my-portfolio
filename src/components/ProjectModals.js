@@ -27,7 +27,12 @@ const ImageContainer = styled.div`
 // `;
 
 const ProjectModals = ({
-  title, description, tech, modalImg,
+  title,
+  description,
+  tech,
+  modalImg,
+  liveDemoLink,
+  githubSourceLink,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -149,7 +154,7 @@ const ProjectModals = ({
               style={{ display: 'flex', justifyContent: 'center' }}
             >
               <Button
-                href="https://resortvista.onrender.com/"
+                href={liveDemoLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -159,7 +164,7 @@ const ProjectModals = ({
                 Live Demo
               </Button>
               <Button
-                href="https://github.com/meryemsanem/resort-back-end"
+                href={githubSourceLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -187,6 +192,8 @@ ProjectModals.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   modalImg: PropTypes.string.isRequired,
+  liveDemoLink: PropTypes.string.isRequired,
+  githubSourceLink: PropTypes.string.isRequired,
   tech: PropTypes.string.isRequired,
 };
 
