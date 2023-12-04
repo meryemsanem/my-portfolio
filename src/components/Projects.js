@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import backImage from './projectt.png';
+import resortImage from './resort.png';
 import ProjectModals from './ProjectModals';
 
 const ProjectsWrapper = styled.section`
@@ -62,6 +63,7 @@ const Projects = () => {
       description:
         'Resort Vista is a web application built with a Ruby on Rails backend API and a React frontend UI, offering users a platform to explore and manage resort reservations. Whether you are planning a getaway or looking for a relaxing vacation spot, Resort Vista provides a seamless experience to discover, reserve, and manage your resort bookings.',
       imageUrl: backImage,
+      modalImg: resortImage,
     },
     {
       id: 2,
@@ -109,6 +111,7 @@ const Projects = () => {
                 tech={project.tech}
                 description={project.description}
                 imageUrl={project.imageUrl}
+                modalImg={project.modalImg}
               />
             </div>
           </ProjectItem>
