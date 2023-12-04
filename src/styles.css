@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 91vh;
+  height: 100vh;
   text-align: center;
   background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .homepage p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: whitesmoke;
 }
 
@@ -27,6 +27,22 @@
   background-color: #333;
   align-items: center;
   color: #f5f5f5;
+}
+
+.navigation-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.intro-about {
+ text-align: center;
+ margin-inline: 10%;
+ color: whitesmoke;
+ font-weight: 100;
+ font-size: 0.8rem;
 }
 
 .nav-links a {
