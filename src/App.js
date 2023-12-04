@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
+import About from './components/About';
 
 const App = () => (
   <Router>
@@ -10,6 +11,7 @@ const App = () => (
       <Navigation />
       <Homepage />
       <Projects />
+      <About />
     </div>
   </Router>
 );
