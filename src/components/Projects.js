@@ -131,28 +131,30 @@ const Projects = () => {
   ];
 
   return (
-    <ProjectsWrapper>
-      <ProjectList>
-        {projects.map((project) => (
-          <ProjectItem key={project.id}>
-            <img src={project.imageUrl || backImage} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.tech}</p>
-            <div className="button-group">
-              <ProjectModals
-                title={project.title}
-                tech={project.tech}
-                description={project.description}
-                imageUrl={project.imageUrl}
-                modalImg={project.modalImg}
-                liveDemoLink={project.liveDemoLink}
-                githubSourceLink={project.githubSourceLink}
-              />
-            </div>
-          </ProjectItem>
-        ))}
-      </ProjectList>
-    </ProjectsWrapper>
+    <div id="projects">
+      <ProjectsWrapper>
+        <ProjectList>
+          {projects.map((project) => (
+            <ProjectItem key={project.id}>
+              <img src={project.imageUrl || backImage} alt={project.title} />
+              <h3>{project.title}</h3>
+              <p>{project.tech}</p>
+              <div className="button-group">
+                <ProjectModals
+                  title={project.title}
+                  tech={project.tech}
+                  description={project.description}
+                  imageUrl={project.imageUrl}
+                  modalImg={project.modalImg}
+                  liveDemoLink={project.liveDemoLink}
+                  githubSourceLink={project.githubSourceLink}
+                />
+              </div>
+            </ProjectItem>
+          ))}
+        </ProjectList>
+      </ProjectsWrapper>
+    </div>
   );
 };
 

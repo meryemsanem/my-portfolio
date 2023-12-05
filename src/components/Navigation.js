@@ -9,6 +9,14 @@ function Navigation() {
   const closeMenu = () => setIsOpen(false);
   const handleStateChange = (state) => setIsOpen(state.isOpen);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      closeMenu();
+    }
+  };
+
   const styles = {
     bmBurgerButton: {
       position: 'fixed',
@@ -48,41 +56,43 @@ function Navigation() {
 
   return (
     <div>
-      <nav className="nav-links">
-        <div className="logo">
-          <h2 className="my-logo">M.S.K</h2>
-        </div>
-        <div className="links">
-          <Link to="/" onClick={closeMenu}>
+      <div className="navigation-wrapper">
+        <nav className="nav-links">
+          <div className="logo">
+            <h2 className="my-logo">M.S.K</h2>
+          </div>
+          <div className="links">
+            <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
+              Home
+            </Link>
+            <Link to="/projects" onClick={() => scrollToSection('projects')}>
+              Projects
+            </Link>
+            <Link to="/about" onClick={() => scrollToSection('about')}>
+              About Me
+            </Link>
+            <Link to="/contact" onClick={() => scrollToSection('contact')}>
+              Contact
+            </Link>
+          </div>
+        </nav>
+        <Menu styles={styles} isOpen={isOpen} onStateChange={handleStateChange}>
+          <Link to="/homepage" onClick={() => scrollToSection('homepage')}>
+            {' '}
             Home
           </Link>
-          <Link to="/projects" onClick={closeMenu}>
+          <Link to="/projects" onClick={() => scrollToSection('projects')}>
             Projects
           </Link>
-          <Link to="/about" onClick={closeMenu}>
-            About Me
+          <Link to="/about" onClick={() => scrollToSection('about')}>
+            About
           </Link>
-          <Link to="/contact" onClick={closeMenu}>
+          <Link to="/contact" onClick={() => scrollToSection('contact')}>
             Contact
           </Link>
-        </div>
-      </nav>
-      <Menu styles={styles} isOpen={isOpen} onStateChange={handleStateChange}>
-        <Link to="/" onClick={closeMenu}>
-          Home
-        </Link>
-        <Link to="/projects" onClick={closeMenu}>
-          Projects
-        </Link>
-        <Link to="/about" onClick={closeMenu}>
-          About
-        </Link>
-        <Link to="/contact" onClick={closeMenu}>
-          Contact
-        </Link>
-      </Menu>
+        </Menu>
+      </div>
     </div>
   );
 }
-
 export default Navigation;
