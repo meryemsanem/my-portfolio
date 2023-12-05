@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import About from './components/About';
+import ContactForm from './components/ContactForm';
 
 const App = () => (
   <Router>
@@ -12,6 +13,7 @@ const App = () => (
       <Homepage />
       <Projects />
       <About />
+      <ContactForm />
     </div>
   </Router>
 );
