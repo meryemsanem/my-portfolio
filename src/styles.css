@@ -37,6 +37,19 @@
   z-index: 9999;
 }
 
+.socials a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
 .intro-about {
   text-align: center;
   margin-inline: 10%;
@@ -106,7 +119,7 @@
 .project-title {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #000000;
+  color: #000;
   text-align: center;
 }
 
@@ -206,10 +219,10 @@
 }
 
 .contact-form-cont {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
@@ -245,7 +258,7 @@ textarea {
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -279,7 +292,7 @@ textarea {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #000;
   color: white;
   padding: 5px 0;
   text-align: center;
@@ -299,27 +312,13 @@ textarea {
   text-align: center;
 }
 
-.socials a {
-  margin: 0 10px;
-  font-size: 28px;
-  color: white;
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
 .social-icons {
   display: flex;
   gap: 15px;
 }
 
-.social-icons a {
-  color: white;
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
 .socials a:hover {
-  color: #000000;
+  color: #000;
 }
 
 .modal-container {
@@ -359,6 +358,7 @@ textarea {
     font-size: 1rem;
     color: whitesmoke;
   }
+
   .bm-item {
     display: block;
     padding: 0.8em;
@@ -413,7 +413,7 @@ textarea {
   }
 
   .footer {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -436,10 +436,10 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    margin: 2% 0 0 0 0;
+    margin: 2% 0 0 0;
   }
 
-   .modal-container {
+  .modal-container {
     align-items: center;
     display: flex;
     flex-direction: column;
