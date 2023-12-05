@@ -109,6 +109,8 @@
   color: #fcf5f5;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
 .tech-stack {
@@ -136,7 +138,7 @@
 .frontend-tech:hover,
 .backend-tech:hover,
 .professional:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 

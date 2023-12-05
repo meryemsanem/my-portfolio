@@ -13,7 +13,7 @@ const Button = styled.a`
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  background-color: #222;
+  background-color: #6e6e6e;
   font-size: 1.1rem;
   transition: background-color 0.3s ease;
 
@@ -31,16 +31,12 @@ const About = () => (
       <p className="about-text">
         A dedicated Full Stack Developer passionate about crafting seamless and
         efficient applications. My journey into tech began with a degree in
-        Mathematics and Computer Science, cultivating a foundation in
-        problem-solving and analytical thinking. My educational journey includes
+        Mathematics and Computer Science. My educational journey includes
         completing a comprehensive Full-Stack Web Development program at
-        Microverse. This experience not only honed my technical skills but also
-        enriched my collaborative prowess through diverse project work. I have
-        spent more than 1300+ hours mastering algorithms, data structures, and
-        full-stack development while simultaneously developing projects with
-        Ruby, Rails, JavaScript, React, and Redux. I&apos;ve engaged in
-        collaborations with remote developers from around the world and
-        participated in numerous group projects.
+        Microverse. Spent 1300+ hours mastering algorithms, data structures, and
+        full-stack development. Proficient in Ruby, Rails, JavaScript, React,
+        and Redux. Collaborated globally with remote developers, contributing to
+        multiple group projects.
       </p>
       <Button
         href={myResume}
