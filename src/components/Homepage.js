@@ -37,7 +37,7 @@ const Homepage = () => {
         <p className="intro-about">
           A passionate Full Stack Developer, crafting seamless web applications.
           <br />
-          With a degree in Mathematics and Computer Science, I&apos;ve spent
+          I&apos;ve spent
           over 1300+ hours mastering JavaScript, React, Ruby on Rails, and more.
           <br />
           Collaborative and driven by learning, I&apos;m excited to tackle new

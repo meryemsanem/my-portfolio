@@ -132,6 +132,9 @@ const Projects = () => {
 
   return (
     <div id="projects">
+      <div className="projects-header">
+        <h2 className="project-title"> My Recent Works</h2>
+      </div>
       <ProjectsWrapper>
         <ProjectList>
           {projects.map((project) => (
