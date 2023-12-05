@@ -273,6 +273,52 @@ textarea {
 .success-message p {
   margin-bottom: 0;
 }
+
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons,
+.socials a:hover {
+  color: #000000;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
