@@ -78,14 +78,14 @@ const ProjectModals = ({
     // textModal: {
     //   // flex: '3',
     // },
-    modalContainer: {
-      display: 'grid',
-      gridTemplateColumns: '2fr 1fr',
-      gap: '20px',
-      alignItems: 'center',
-      // width: '80%',
-      // margin: '0 auto',
-    },
+    // modalContainer: {
+    //   display: 'grid',
+    //   gridTemplateColumns: '2fr 1fr',
+    //   gap: '20px',
+    //   alignItems: 'center',
+    //   // width: '80%',
+    //   // margin: '0 auto',
+    // },
     modalImage: {
       width: '100%',
       height: 'auto',
@@ -115,6 +115,7 @@ const ProjectModals = ({
       background-color: #555;
     }
   `;
+
   const openModal = () => {
     setModalIsOpen(true);
     document.body.style.overflow = 'hidden';
@@ -141,7 +142,7 @@ const ProjectModals = ({
         contentLabel="ProjectModals Details"
         style={modalStyles}
       >
-        <div className="modal-container" style={modalStyles.modalContainer}>
+        <div className="modal-container">
           <div className="title-img" style={{ width: '100%' }}>
             <h2>{title}</h2>
             <p>{tech}</p>
