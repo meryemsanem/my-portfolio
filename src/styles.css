@@ -88,13 +88,12 @@
 .about-section {
   padding: 50px 0;
   text-align: center;
-  background-image: url('./images/aboutBack.jpg');
+  background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-container {
-  /* max-width: 800px; */
   margin: auto 80px;
 }
 
@@ -102,6 +101,13 @@
   font-size: 2em;
   margin-bottom: 20px;
   color: #fcf5f5;
+}
+
+.project-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
 }
 
 .about-text {
@@ -119,8 +125,6 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
-
-  /* margin-inline: 30px; */
   gap: 20px;
 }
 
@@ -175,7 +179,7 @@
 }
 
 .contact {
-  padding: 40px 0;
+  padding: 40px 20px;
   background-image: url('./images/about.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,9 +318,15 @@ textarea {
   transition: color 0.3s ease;
 }
 
-.social-icons,
 .socials a:hover {
   color: #000000;
+}
+
+.modal-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -339,6 +349,16 @@ textarea {
     background-size: cover;
   }
 
+  .homepage h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 300;
+  }
+
+  .homepage p {
+    font-size: 1rem;
+    color: whitesmoke;
+  }
   .bm-item {
     display: block;
     padding: 0.8em;
@@ -365,6 +385,64 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .about-section {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-container {
+    margin: auto 10px;
+  }
+
+  .about-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fcf5f5;
+  }
+
+  .about-text {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fcf5f5;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    max-width: 900px;
+  }
+
+  .footer {
+    background-color: #000000;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    padding: 40px 20px;
+    background-image: url('./images/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 2% 0 0 0 0;
+  }
+
+   .modal-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
