@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b356d81a.css",
+    "main.js": "/static/js/main.c2142578.js",
+    "static/media/resort.png": "/static/media/resort.62adb31db2491eb4a9b4.png",
+    "static/media/space-travelers.png": "/static/media/space-travelers.e4ea840375e36baa09af.png",
+    "static/media/aboutBack.jpg": "/static/media/aboutBack.5c26d539a40caafa15eb.jpg",
+    "static/media/about.png": "/static/media/about.6692db73861538516a20.png",
+    "static/media/explore-countries.png": "/static/media/explore-countries.2236928a6908bd50741a.png",
+    "static/media/projectt.png": "/static/media/projectt.fa697881630f5e771521.png",
+    "static/media/budgetapp.png": "/static/media/budgetapp.f732e944663c88ecf504.png",
+    "static/media/resume.pdf": "/static/media/resume.1abbfea915fa3d397339.pdf",
+    "static/media/bookstore.png": "/static/media/bookstore.2176a72119dfb203f68c.png",
+    "static/media/icon2.png": "/static/media/icon2.b1c1a74baf70e68ad990.png",
+    "static/media/icon3.png": "/static/media/icon3.cdba64431a4e496080da.png",
+    "static/media/icon4.png": "/static/media/icon4.7926d693dd2e057f0c46.png",
+    "static/media/todoapp.png": "/static/media/todoapp.af692d38fcd030a93cc0.png",
+    "static/media/background.jpg": "/static/media/background.2c6856feb350666ae81d.jpg",
+    "index.html": "/index.html",
+    "main.b356d81a.css.map": "/static/css/main.b356d81a.css.map",
+    "main.c2142578.js.map": "/static/js/main.c2142578.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b356d81a.css",
+    "static/js/main.c2142578.js"
+  ]
+}
