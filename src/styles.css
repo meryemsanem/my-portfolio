@@ -37,6 +37,19 @@
   z-index: 9999;
 }
 
+.socials a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
 .intro-about {
   text-align: center;
   margin-inline: 10%;
@@ -88,13 +101,12 @@
 .about-section {
   padding: 50px 0;
   text-align: center;
-  background-image: url('./images/aboutBack.jpg');
+  background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-container {
-  /* max-width: 800px; */
   margin: auto 80px;
 }
 
@@ -102,6 +114,13 @@
   font-size: 2em;
   margin-bottom: 20px;
   color: #fcf5f5;
+}
+
+.project-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
 }
 
 .about-text {
@@ -119,8 +138,6 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
-
-  /* margin-inline: 30px; */
   gap: 20px;
 }
 
@@ -174,6 +191,143 @@
   border-radius: 50%;
 }
 
+.contact {
+  padding: 40px 20px;
+  background-image: url('./images/about.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 2% 0 0 0;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: whitesmoke;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form-cont {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  margin-top: 20px;
+  background-color: #333;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success-message h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a:hover {
+  color: #000;
+}
+
+.modal-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -192,6 +346,17 @@
     background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .homepage h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 300;
+  }
+
+  .homepage p {
+    font-size: 1rem;
+    color: whitesmoke;
   }
 
   .bm-item {
@@ -222,11 +387,63 @@
     justify-content: space-around;
   }
 
-  /* .frontend-tech,
-  .backend-tech,
-  .professional {
-    flex-basis: calc(50% - 20px);
-  } */
+  .about-section {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-container {
+    margin: auto 10px;
+  }
+
+  .about-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fcf5f5;
+  }
+
+  .about-text {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fcf5f5;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    max-width: 900px;
+  }
+
+  .footer {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    padding: 40px 20px;
+    background-image: url('./images/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 2% 0 0 0;
+  }
+
+  .modal-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @keyframes fadeIn {

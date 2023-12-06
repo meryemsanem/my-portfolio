@@ -1,13 +1,21 @@
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles.css';
 
-function Navigation() {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenu = () => setIsOpen(false);
   const handleStateChange = (state) => setIsOpen(state.isOpen);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -94,5 +102,5 @@ function Navigation() {
       </div>
     </div>
   );
-}
+};
 export default Navigation;
