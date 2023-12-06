@@ -12,20 +12,6 @@ const ImageContainer = styled.div`
   display: inline-block;
 `;
 
-// const ModalButton = styled.button`
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   padding: 10px 20px;
-//   background-color: rgba(255, 255, 255, 0.8);
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   transition: opacity 0.3s ease;
-//   opacity: 0;
-// `;
-
 const ProjectModals = ({
   title,
   description,
@@ -49,13 +35,9 @@ const ProjectModals = ({
       transform: 'translate(-50%, -50%)',
       borderRadius: '8px',
       padding: '20px',
-      // width: 'min-content',
-      // maxHeight: '80vh',
       display: 'flex',
       alignItems: 'center',
       width: '80%',
-      // gap: '2rem',
-      // height: '60vh',
     },
     closeButton: {
       position: 'absolute',
@@ -66,37 +48,15 @@ const ProjectModals = ({
       background: 'none',
       fontSize: '18px',
     },
-    // modalImage: {
-    //   width: '80%',
-    //   // maxHeight: '300px',
-    //   // height: '100%',
-    //   borderRadius: '8px',
-    //   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    //   margin: '20px 0',
-    //   // flex: '2',
-    // },
-    // textModal: {
-    //   // flex: '3',
-    // },
-    // modalContainer: {
-    //   display: 'grid',
-    //   gridTemplateColumns: '2fr 1fr',
-    //   gap: '20px',
-    //   alignItems: 'center',
-    //   // width: '80%',
-    //   // margin: '0 auto',
-    // },
     modalImage: {
       width: '100%',
       height: 'auto',
       borderRadius: '8px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      // gridColumn: '1 / span 2',
     },
     textModal: {
       textAlign: 'center',
       margin: '20px',
-      // gridColumn: '2 / span 1',
     },
   };
 
