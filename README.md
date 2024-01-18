@@ -2,7 +2,7 @@
 
 <div align="center">
  <img src="./public/myLogo.png" alt="Resort Vista Logo" width="250" height="250"/>
-[  <h1><b>Meryem Sanem  </b></h1>
+ <h1><b>Meryem Sanem Küçükbayram </b></h1>
 
 </div>
 
